@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink&Food</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.svg">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/lenzlibrary.css">
+    <link rel="stylesheet" href="css/lenzlibrary-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="loader-wrapper">
+      <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" class="loader" alt="Loading...">
+  </div>
+  <div class="main-div">
+    <header class="header-top fixed-top" id="header-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Drink&Food</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="food.html">food</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="drink.html">Drink</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wine.html">Wine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">ContactUs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faqs.html">Faqs</a>
+              </li>
+          
+            </ul>
+            <div class="d-flex hedaer-social-icon" role="search">
+              <a href="#">
+                <img src="./img/brands.svg" alt="" class="img-fluid">
+              </a>
+              <a href="#">
+                <img src="./img/brands1.svg" alt="" class="img-fluid">
+              </a>
+              <a href="#">
+                <img src="./img/brands3.svg" alt="" class="img-fluid">
+              </a>
+              <a href="#">
+                <img src="./img/brands4.svg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="background-cover-drink"> 
+        <video src="./img/watermarked_preview.mp4" autoplay loop muted class="bg-image"></video>
+        <div class="container">
+           <div class="tiltle">
+            <h1>
+              A Beginner’s Guide to Drink Pairing
+          </h1>
+          <p>
+            Every ingredient has a story, and we’re cooking 
+            up something special. 👨‍🍳 #KitchenChronicles
+          </p>
+           </div>
+        </div>
+      </section>
+    <section class="drinkdetailspage">
+        <div class="container">
+          <div class="col">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                 <div class="drink-details-img-main">
+                     <img src="./img/food7.png" alt="" class="img-fluid drink-details-img" style="object-fit: cover;">
+                 </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="drink-main-details ">
+                  <div class="drink-details-description">
+                    <div class="id-details-drink">
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="drink-Related">
+      <div class="container">
+        <div class="allfoode-title text-center">
+          <h1>Drink Related</h1>
+          <div class="d-lg-block d-md-block d-none">
+            <a href="food.html" class="btn btn-dark">View All</a>
+          </div>
+        </div>
+          <div class="swiper mySwiperDrinkDetails" style="display: block;">
+            <div class="swiper-wrapper" id="sliderWrapperDrinkDetails">
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="d-lg-none d-md-none d-block">
+            <a href="food.html" class="btn btn-dark m-auto mt-3">View All</a>
+          </div>
+      </div>
+    </section>
+    <footer class="bd-footer py-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-3 mb-3 brand-logo-footer">
+            <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="index.html" aria-label="Bootstrap">
+              Drink&Food 
+            </a>
+            <ul class="list-unstyled small text-muted">
+              <li class="mb-2">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies</li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+            <h5>About Food</h5>
+            <ul class="list-unstyled">
+              <li><a href="food.html">Food</a></li>
+              <li><a href="food.html">Category</a></li>
+              <li><a href="food.html">Non Veg</a></li>
+              <li><a href="food.html">Veg</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5>About Drink</h5>
+            <ul class="list-unstyled">
+              <li ><a href="drink.html">Drink</a></li>
+              <li ><a href="drink.html">Normal Drink</a></li>
+              <li ><a href="drink.html">Non Alcoholic</a></li>
+              <li ><a href="drink.html">Alcoholic</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5>Projects</h5>
+            <ul class="list-unstyled">
+              <li ><a href="">Profile</a></li>
+              <li ><a href="">Food Project</a></li>
+              <li ><a href="">Drink Project</a></li>
+              <li ><a href="">All Food Drink</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5>Learn More</h5>
+            <ul class="list-unstyled">
+              <li class=""><a href="">Privacy</a></li>
+              <li class=""><a href="">Security</a></li>
+              <li class=""><a href="">Terms</a></li>
+              <li class=""><a href="">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button onclick="goTopFunction()" id="goToTop" title="Go to top">&#8593;</button>
+
+  </div>
+ 
+  <script src="dist/js/jquery.min.js"></script>
+  <script src="dist/js/bootstrap.bundle.min.js"></script>
+  <script src="dist/js/popper.min.js"></script>
+  <script src="dist/js/slick.js"></script>
+  <script src="dist/js/owl.carousel.js"></script>
+  <script src="dist/js/swiper-bundle.min.js"></script>
+  <script src="dist/js/flickity.pkgd.min.js"></script>  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./dist/js/home-js.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".navbar-toggler").click(function () {
+                $(this).toggleClass("is-active");
+                $(".navbar-expand-lg").toggleClass("header-is-active");
+            });
+        });
+    </script>
+    <script>
+      window.addEventListener('scroll', function() {
+          var content = document.querySelector('header');
+          var scrollPosition = window.scrollY;
+          // Change background color when scrolling beyond a certain threshold
+          if (scrollPosition > 10) {
+              //.style.backgroundColor = '#1E1E1E'; // Change to red when scrolled past 100px
+              content.classList.add("header-scroll")
+          } else {
+             // content.style.backgroundColor = 'transparent'; // Change back to original color when not scrolled past 100px
+              content.classList.remove("header-scroll")
+          }
+      });
+    </script>
+    <script>
+        const drinkIDget = new URLSearchParams(window.location.search).get('i');
+        console.log(drinkIDget);
+        
+
+       let idDrinkUrl = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drinkIDget}`;
+       let imgSrc = document.querySelector('.drink-details-img');
+       let iddetailsDrinks = document.querySelector('.id-details-drink');
+
+       async function drinkDetailsPage(){
+        let fetchDrinkDetails = await fetch(idDrinkUrl);
+        let fetchResponse = await fetchDrinkDetails.json();
+        let fetchAllid = fetchResponse.drinks;
+
+        let relatedCategory
+
+        fetchAllid.forEach( (elDrink)=>{
+            console.log(elDrink);
+            relatedCategory = elDrink.strCategory;
+            imgSrc.src = `${elDrink.strDrinkThumb}`
+            iddetailsDrinks.innerHTML=`
+            <div class="id-details">
+                <h2>${elDrink.strDrink}</h2>
+                <h6>Alcoholic:${elDrink.strAlcoholic}</h6>
+                <h6>Category:${elDrink.strCategory}</h6>
+                <h6>Glass${elDrink.strGlass}</h6>
+                <div class="Drink-details-p">
+                <p> ${elDrink.strInstructions}</p>
+                </div>
+                <div class="-drink-ingredient-list">
+                <h6>Ingredient:
+                    <p>
+                        ${elDrink.strIngredient1} ${elDrink.strMeasure1},
+                        ${elDrink.strIngredient2} ${elDrink.strMeasure2},
+                        ${elDrink.strIngredient3} ${elDrink.strMeasure3},
+                        ${elDrink.strIngredient4} ${elDrink.strMeasure4},
+                        ${elDrink.strIngredient5} ${elDrink.strMeasure5},
+                        ${elDrink.strIngredient6} ${elDrink.strMeasure6},
+                        ${elDrink.strIngredient7} ${elDrink.strMeasure7},
+                        ${elDrink.strIngredient8} ${elDrink.strMeasure8},
+                        ${elDrink.strIngredient9} ${elDrink.strMeasure9}
+
+                    </p>
+                </h6>
+                </div>
+            </div>
+            `
+        });
+        relatedfunction(relatedCategory)
+         
+       }
+       drinkDetailsPage()
+
+    //    let foodImg = document.querySelector('.drink-details-img');
+    //    let foodFullDetails = document.querySelector('.drink-details-description');
+         
+       async  function relatedfunction(relatedCategory){
+          let relatedurl = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${relatedCategory}`;
+          let fetchUrlRelated = await fetch(relatedurl);
+          let urlRalated = await fetchUrlRelated.json();
+          let fetchAllRelatedData = urlRalated.drinks;
+          const swiperfood = document.querySelector('.mySwiperDrinkDetails');
+          const wrapperfood = document.getElementById('sliderWrapperDrinkDetails');
+
+          fetchAllRelatedData.forEach( (el)=>{
+            console.log(el)
+            const slidefood = document.createElement('div');
+            slidefood.className = 'swiper-slide';
+            slidefood.innerHTML+=`
+              <div class="card" onclick="viewDrinkDetails('${el.idDrink}')">
+              <div class="food-picture">
+                  <img src="${el.strDrinkThumb}" alt="${el.strDrink}" title="${el.strDrink}" class="img-fluid food-img">
+              </div>
+              <div class="food-details">
+                  <div>
+                    <h5>Id: ${el.idDrink} </h5>
+                    <h5 style="color: gold;">${relatedCategory}</h5>
+                  </div>
+                  <h5>Name:${el.strDrink}</h5>
+              </div>
+              </div>
+              `;
+          wrapperfood.appendChild(slidefood);
+        })
+        swiperfood.style.display = 'block'; 
+          
+      }
+      </script>
+      <script>
+        function viewDrinkDetails(idDrink) {
+            window.location.href = `drinkdetails.html?i=${idDrink}`;
+        }  
+     </script>
+      <script>
+        new Swiper('.mySwiperDrinkDetails', {
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 20,
+            speed: 600, // smoother transition
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+              delay: 1000, // Time between slides in ms
+              disableOnInteraction: false, // Keeps autoplay running after user interaction
+            },
+            breakpoints: {
+              320: { slidesPerView: 1 },
+              640: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              1024: { slidesPerView: 4 },
+            }
+        });
+      </script>
+      
+  </body>
+  </html>
+  

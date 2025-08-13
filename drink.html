@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink&Food</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.svg">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/lenzlibrary.css">
+    <link rel="stylesheet" href="css/lenzlibrary-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="loader-wrapper">
+      <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" class="loader" alt="Loading...">
+  </div>
+  <div class="main-div">
+    <header class="header-top fixed-top" id="header-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Drink&Food</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="food.html">food</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="drink.html">Drink</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wine.html">Wine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">ContactUs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faqs.html">Faqs</a>
+              </li>
+          
+            </ul>
+            <div class="d-flex hedaer-social-icon" role="search">
+              <a href="#">
+                <img src="./img/brands.svg" alt="" class="img-fluid">
+              </a>
+              <a href="#">
+                <img src="./img/brands1.svg" alt="" class="img-fluid">
+              </a>
+              <a href="#">
+                <img src="./img/brands3.svg" alt="" class="img-fluid">
+              </a>
+              <a href="#">
+                <img src="./img/brands4.svg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="background-cover-drink"> 
+      <video src="./img/drink.mp4" autoplay loop muted class="bg-image"></video>
+      <div class="container">
+         <div class="tiltle">
+          <h1>
+            A Beginner’s Guide to Drink Pairing
+        </h1>
+        <p>
+          Every ingredient has a story, and we’re cooking 
+          up something special. 👨‍🍳 #KitchenChronicles
+        </p>
+         </div>
+      </div>
+    </section>
+    <section class="allfooditem">
+      <div class="container">
+        <div class="allfoode-title text-center">
+          <h1>All Drink</h1>
+        </div>
+        <div class="col">
+          <div class="row row-dirnkfilter">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+              <div class="filter-div">
+                <div class="fiter-box">
+                    <label>Filter By Name </label>
+                    <div class="input-search">
+                        <input type="text" class="form-control" id="userDrinkName" placeholder="Enter Full Drink Name">
+                        <button class="btn btnDrinkFilter">search</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+              <div class="drink-fliter-box">
+                <label>List the categories, glasses, ingredients or alcoholic filters</label>
+                <div class="btn-warp">
+                  <select  class="form-select drinkSelectCategoryFilter" onchange="categoriesFunction()">
+                    <option value="">--categories Filter--</option>
+                  </select>
+                  <select  class="form-select drinkSelectGlassFilter" onchange="glassesFunction()">
+                    <option value="">--glasses Filter--</option>
+                  </select>
+                  <select  class="form-select drinkSelectIngregientsFilter" onchange="ingredientsFunction()">
+                    <option value="">--ingredients Filter--</option>
+                  </select>
+                  <select  class="form-select drinkSelectAlcoholicFilter" onchange="alcoholicFunction()">
+                    <option value="">--alcoholic Filter--</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col">
+            <div class="row allDrinkitem">
+                <div class="col-lg-3 col-md-6 col-12 col-sm-12 m-auto">
+                  <div class="card">
+                     <div class="card-img">
+                        <img src="" alt="" title="" class="img-fluid card-drink-img">
+                        <div class="dirnk-name-id">
+                            <h5>jhj</h5>
+                            <h5>jhj</h5>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <footer class="bd-footer py-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-3 mb-3 brand-logo-footer">
+            <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="index.html" aria-label="Bootstrap">
+              Drink&Food 
+            </a>
+            <ul class="list-unstyled small text-muted">
+              <li class="mb-2">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies</li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+            <h5>About Food</h5>
+            <ul class="list-unstyled">
+              <li><a href="food.html">Food</a></li>
+              <li><a href="food.html">Category</a></li>
+              <li><a href="food.html">Non Veg</a></li>
+              <li><a href="food.html">Veg</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5>About Drink</h5>
+            <ul class="list-unstyled">
+              <li ><a href="drink.html">Drink</a></li>
+              <li ><a href="drink.html">Normal Drink</a></li>
+              <li ><a href="drink.html">Non Alcoholic</a></li>
+              <li ><a href="drink.html">Alcoholic</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5>Projects</h5>
+            <ul class="list-unstyled">
+              <li ><a href="">Profile</a></li>
+              <li ><a href="">Food Project</a></li>
+              <li ><a href="">Drink Project</a></li>
+              <li ><a href="">All Food Drink</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5>Learn More</h5>
+            <ul class="list-unstyled">
+              <li class=""><a href="">Privacy</a></li>
+              <li class=""><a href="">Security</a></li>
+              <li class=""><a href="">Terms</a></li>
+              <li class=""><a href="">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button onclick="goTopFunction()" id="goToTop" title="Go to top">&#8593;</button>
+  </div>
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/popper.min.js"></script>
+    <script src="dist/js/slick.js"></script>
+    <script src="dist/js/owl.carousel.js"></script>
+    <script src="dist/js/swiper-bundle.min.js"></script>
+    <script src="dist/js/flickity.pkgd.min.js"></script>  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./dist/js/home-js.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".navbar-toggler").click(function () {
+                $(this).toggleClass("is-active");
+                $(".navbar-expand-lg").toggleClass("header-is-active");
+            });
+        });
+    </script>
+    <script>
+      window.addEventListener('scroll', function() {
+          var content = document.querySelector('header');
+          var scrollPosition = window.scrollY;
+          if (scrollPosition > 10) {
+              content.classList.add("header-scroll")
+          } else {
+              content.classList.remove("header-scroll")
+          }
+      });
+    </script>
+  <script>
+     let categories1 = `https://www.thecocktaildb.com/api/json/v1/1/list.php`;
+
+     let drinkSelectCategoryFilter = document.querySelector('.drinkSelectCategoryFilter');
+     let drinkSelectGlassFilter = document.querySelector('.drinkSelectGlassFilter');
+     let drinkSelectIngregientsFilter = document.querySelector('.drinkSelectIngregientsFilter');
+     let drinkSelectAlcoholicFilter = document.querySelector('.drinkSelectAlcoholicFilter');
+
+     async function drinkCategoryFunction (filterCategory){
+        let categoryUrl = await  fetch(categories1+filterCategory);
+        let categoriesFetch = await categoryUrl.json();
+        //console.log(categoriesFetch);
+        let datadrinks = categoriesFetch.drinks;
+
+        
+        //console.log(filterCategory);
+
+        if(filterCategory === "?c=list"){
+          //console.log(datadrinks)
+          datadrinks.forEach( (itmeDrink)=>{
+              let createOp = document.createElement('option');
+              createOp.value = itmeDrink.strCategory;
+              createOp.innerHTML = itmeDrink.strCategory
+              drinkSelectCategoryFilter.append(createOp)
+          })
+        }
+        else if(filterCategory === "?g=list"){
+          datadrinks.forEach( (itmeDrink)=>{
+          //  console.log(itmeDrink.strGlass)
+              let createOp = document.createElement('option');
+              createOp.value = itmeDrink.strGlass;
+              createOp.innerHTML = itmeDrink.strGlass;
+              drinkSelectGlassFilter.append(createOp)
+          })
+        }
+        else if(filterCategory === "?i=list"){
+          datadrinks.forEach( (itmeDrink)=>{
+          //  console.log(itmeDrink.strIngredient1)
+              let createOp = document.createElement('option');
+              createOp.value = itmeDrink.strIngredient1;
+              createOp.innerHTML = itmeDrink.strIngredient1;
+              drinkSelectIngregientsFilter.append(createOp)
+          })
+        }
+        else if(filterCategory === "?a=list"){
+          datadrinks.forEach( (itmeDrink)=>{
+          //  console.log(itmeDrink.strAlcoholic)
+              let createOp = document.createElement('option');
+              createOp.value = itmeDrink.strAlcoholic;
+              createOp.innerHTML = itmeDrink.strAlcoholic;
+              drinkSelectAlcoholicFilter.append(createOp)
+          })
+        }
+        
+
+     }
+     async function selectOptionfilter(){
+        await drinkCategoryFunction ('?c=list')
+        await drinkCategoryFunction ('?g=list')
+        await drinkCategoryFunction ('?i=list') 
+        await drinkCategoryFunction ('?a=list')
+     }
+     selectOptionfilter()
+  </script>
+  <script>
+    //const drinkUrl = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink`;
+    const drinkUrl = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?`;
+    const allDrinkItemCard = document.querySelector('.allDrinkitem');
+    allDrinkItemCard.innerHTML='';
+
+    async function allDrinkName(i){
+      let allDrinkUrl = await fetch(drinkUrl+i);
+      let drinkResponse = await allDrinkUrl.json();
+      let allDrink = drinkResponse.drinks;
+
+      allDrink.forEach((elDrink)=>{
+        //console.log(elDrink)
+        allDrinkItemCard.innerHTML+=`
+          <div class="col-lg-3 col-md-6 col-12 col-sm-12 m-auto">
+            <div class="card" onclick="viewDrinkDetails('${elDrink.idDrink}')">
+                <div class="card-img">
+                  <img src="${elDrink.strDrinkThumb}" alt="${elDrink.strDrink}" loading="lazy" title="${elDrink.strDrink}" class="img-fluid card-drink-img">
+                  <div class="dirnk-name-id">
+                      <h5>  ${elDrink.strDrink}</h5>
+                      <h5>idDrink: ${elDrink.idDrink}</h5>
+                  </div>
+                </div>
+            </div>
+          </div>
+        `;
+      })
+    }
+    async function allDrinkFunction(){
+       await  allDrinkName('c=Ordinary_Drink');
+       await  allDrinkName('a=Non_Alcoholic');
+       await  allDrinkName('a=Alcoholic');
+    }
+    allDrinkFunction()
+  </script>
+
+  <script>
+    // serach filter 
+    let btnDrinkFilter = document.querySelector('.btnDrinkFilter')
+    const searchFirstLetter =`https://www.thecocktaildb.com/api/json/v1/1/search.php?f=`
+    const searchUrl = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=`;
+    
+    function resetInput() {
+      document.querySelector('#userDrinkName').value = ''; 
+    }
+
+    async function searchFunction(searchName){
+        
+        let userDrinkName = document.querySelector('#userDrinkName').value;
+        let strlength = userDrinkName.length;
+        if(strlength == 1){
+         // console.log('one')
+         allDrinkItemCard.innerHTML= "";
+          let serachFetch = await fetch(searchFirstLetter+userDrinkName);
+          let responseSearch = await serachFetch.json();
+          let fetchData = responseSearch.drinks;
+          fetchData.forEach( (elSearch)=>{
+            let descripLimit = elSearch.strInstructions;
+            let setParaLimit = descripLimit.slice(0,100)+'....';
+            console.log(elSearch);
+            allDrinkItemCard.innerHTML+=`
+              <div class="col-lg-3 col-md-6 col-12 col-sm-12 m-auto">
+                <div class="card card-height" onclick="viewDrinkDetails('${elSearch.idDrink}')">
+                    <div class="card-img">
+                      <img src="${elSearch.strDrinkThumb}" alt="${elSearch.strDrink}"  loading="lazy" title="${elSearch.strDrink}" class="img-fluid card-drink-img">
+                      <div class="dirnk-name-id">
+                          <h5>  ${elSearch.strDrink}</h5>
+                          <h5>idDrink: ${elSearch.idDrink}</h5>
+                      </div>
+                      <div class="descript-p">
+                        <p>${setParaLimit}</p>
+                      </div>
+                      <div class="descript-tag">
+                        <h6>Alcoholic: <p>${elSearch.strAlcoholic}</p> Category: <p>${elSearch.strCategory}</p> Glass: <p>${elSearch.strGlass}</p> </h6>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            `;
+          })
+        }
+        else if(strlength >= 1){
+          //console.log('two')
+          allDrinkItemCard.innerHTML= "";
+          let serachFetch = await fetch(searchUrl+userDrinkName);
+          let responseSearch = await serachFetch.json();
+          let fetchData = responseSearch.drinks;
+          fetchData.forEach( (elSearch)=>{
+            let descripLimit = elSearch.strInstructions;
+            let setParaLimit = descripLimit.slice(0,100)+'....';
+            console.log(elSearch);
+              allDrinkItemCard.innerHTML+=`
+              <div class="col-lg-3 col-md-6 col-12 col-sm-12 m-auto">
+                <div class="card card-height" onclick="viewDrinkDetails('${elSearch.idDrink}')">
+                    <div class="card-img">
+                      <img src="${elSearch.strDrinkThumb}" alt="${elSearch.strDrink}" loading="lazy" title="${elSearch.strDrink}" class="img-fluid card-drink-img">
+                      <div class="dirnk-name-id">
+                          <h5>  ${elSearch.strDrink}</h5>
+                          <h5>idDrink: ${elSearch.idDrink}</h5>
+                      </div>
+                      <div class="descript-p">
+                        <p>${setParaLimit}</p>
+                      </div>
+                      <div class="descript-tag">
+                        <h6>Alcoholic: <p>${elSearch.strAlcoholic}</p> Category: <p>${elSearch.strCategory}</p> Glass: <p>${elSearch.strGlass}</p> </h6>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            `;
+          })
+        }
+        else{
+          alert("yoy input box empty please type something in (letter)")
+        }
+        resetInput();
+    }
+   btnDrinkFilter.addEventListener('click', searchFunction);
+
+  </script>
+  <script>
+    const categ1 = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=`
+    const categ2 = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?g=`
+    const categ3 = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=`
+    const categ4 = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=`
+    function categoriesFunction(){
+       let selectCateValue = document.querySelector('.drinkSelectCategoryFilter').value;
+        console.log(selectCateValue);
+        selectFilter(categ1,selectCateValue);
+    }
+    function glassesFunction(){
+      let selectGlassValue = document.querySelector('.drinkSelectGlassFilter').value;
+      console.log(selectGlassValue);
+      selectFilter(categ2,selectGlassValue);
+    }
+    function ingredientsFunction(){
+      let selectIngreValue = document.querySelector('.drinkSelectIngregientsFilter').value;
+      console.log(selectIngreValue);
+      selectFilter(categ3,selectIngreValue);
+    }
+    function alcoholicFunction(){
+      let selectAlchoValue = document.querySelector('.drinkSelectAlcoholicFilter').value;
+      console.log(selectAlchoValue);
+      selectFilter(categ4,selectAlchoValue);
+    }
+
+    async function selectFilter(categoryValue, selectValue){
+        allDrinkItemCard.innerHTML=""
+        let fetchSelectValue =  await fetch(categoryValue+selectValue);
+        let responseData = await fetchSelectValue.json();
+        let responseAllData = responseData.drinks;
+        console.log(responseAllData)
+        responseAllData.filter( (filterItem)=>{
+          console.log(filterItem);
+          allDrinkItemCard.innerHTML+=`
+              <div class="col-lg-3 col-md-6 col-12 col-sm-12 m-auto">
+                <div class="card card-height" onclick="viewDrinkDetails('${filterItem.idDrink}')">
+                    <div class="card-img">
+                      <img src="${filterItem.strDrinkThumb}" alt="${filterItem.strDrink}" loading="lazy" title="${filterItem.strDrink}" class="img-fluid card-drink-img">
+                      <div class="dirnk-name-id">
+                          <h5>  ${filterItem.strDrink}</h5>
+                          <h5>idDrink: ${filterItem.idDrink}</h5>
+                      </div>
+                      <div class="descript-p d-none">
+                        <p class="d-none">${filterItem}</p>
+                      </div>
+                      <div class="descript-tag d-none">
+                        <h6>Alcoholic: <p>${filterItem.strAlcoholic}</p> Category: <p>${filterItem.strCategory}</p> Glass: <p>${filterItem.strGlass}</p> </h6>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            `;
+        })
+    }
+  </script>
+  <script>
+    function viewDrinkDetails(idDrink) {
+        window.location.href = `drinkdetails.html?i=${idDrink}`;
+    }  
+</script>
+  </body>
+  </html>
+  

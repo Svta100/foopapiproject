@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink&Food</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.svg">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/lenzlibrary.css">
+    <link rel="stylesheet" href="css/lenzlibrary-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="loader-wrapper">
+      <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" class="loader" alt="Loading...">
+  </div>
+  <div class="main-div">
+    <header class="header-top fixed-top" id="header-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Drink&Food</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="food.html">food</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="drink.html">Drink</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wine.html">Wine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">ContactUs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faqs.html">Faqs</a>
+              </li>
+          
+            </ul>
+            <div class="d-flex hedaer-social-icon" role="search">
+              <a href="#">
+                <img src="./img/brands.svg" alt="" class="img-fluid">
+              </a>
+              <a href="#">
+                <img src="./img/brands1.svg" alt="" class="img-fluid">
+              </a>
+              <a href="#">
+                <img src="./img/brands3.svg" alt="" class="img-fluid">
+              </a>
+              <a href="#">
+                <img src="./img/brands4.svg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="background-cover-food"> 
+      <img src="./img/food-bg-img.jpg" class="bg-image img-fluid"></video>
+      <div class="container">
+         <div class="tiltle">
+            <h1>
+                A Beginner’s Guide to Food  Pairing
+            </h1>
+            <p>
+                At [Your Brand], our passion lies in creating memorable culinary moments. 
+                Whether you crave comfort food or crave bold, new tastes, our chefs craft each 
+                dish with care, creativity, and a sprinkle of magic.
+            </p>
+         </div>
+      </div>
+    </section>
+    <section class="bg-black food-list-section">
+        <div class="container">
+            <div class="col">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="filter-div">
+                            <div class="fiter-box">
+                                <label>Filter By Name </label>
+                                <div class="input-search">
+                                    <input type="text" class="form-control" id="username" placeholder="Enter Full Dish Name">
+                                    <button class="btn btnFilter">search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="filter-div">
+                            <div class="fiter-box">
+                                <label>Filter By Country </label>
+                                <select class="form-select" id="byAreaName" onchange="AreaselecFunction()">
+                                    <option value=""> --Select Area -- </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="filter-div">
+                            <div class="fiter-box">
+                                <label>Filter By Category </label>
+                                <select class="form-select" id="byCategoryName" onchange="selectCategoryFunction()">
+                                    <option value=""> --Select Category-- </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col fiter-contet-message">
+              <h6 id="filter">filter</h6>
+            </div>
+            <div class="row" id="foodlist">
+                <div class="col-lg-6 col-md-4 col-12 col-sm-12">
+                    <div class="card">
+                        <div class="card-food-img">
+                            <img src="./img/food3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-food-details">
+                            <h5>food name</h5>
+                            <h5>food Id name</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bd-footer py-5">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-3 mb-3 brand-logo-footer">
+              <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="index.html" aria-label="Bootstrap">
+                Drink&Food 
+              </a>
+              <ul class="list-unstyled small text-muted">
+                <li class="mb-2">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies</li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+              <h5>About Food</h5>
+              <ul class="list-unstyled">
+                <li><a href="food.html">Food</a></li>
+                <li><a href="food.html">Category</a></li>
+                <li><a href="food.html">Non Veg</a></li>
+                <li><a href="food.html">Veg</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>About Drink</h5>
+              <ul class="list-unstyled">
+                <li ><a href="drink.html">Drink</a></li>
+                <li ><a href="drink.html">Normal Drink</a></li>
+                <li ><a href="drink.html">Non Alcoholic</a></li>
+                <li ><a href="drink.html">Alcoholic</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Projects</h5>
+              <ul class="list-unstyled">
+                <li ><a href="">Profile</a></li>
+                <li ><a href="">Food Project</a></li>
+                <li ><a href="">Drink Project</a></li>
+                <li ><a href="">All Food Drink</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Learn More</h5>
+              <ul class="list-unstyled">
+                <li class=""><a href="">Privacy</a></li>
+                <li class=""><a href="">Security</a></li>
+                <li class=""><a href="">Terms</a></li>
+                <li class=""><a href="">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <button onclick="goTopFunction()" id="goToTop" title="Go to top">&#8593;</button>
+  </div>
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/popper.min.js"></script>
+    <script src="dist/js/slick.js"></script>
+    <script src="dist/js/owl.carousel.js"></script>
+    <script src="dist/js/swiper-bundle.min.js"></script>
+    <script src="dist/js/flickity.pkgd.min.js"></script>  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./dist/js/home-js.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".navbar-toggler").click(function () {
+                $(this).toggleClass("is-active");
+                $(".navbar-expand-lg").toggleClass("header-is-active");
+            });
+        });
+    </script>
+    <script>
+      window.addEventListener('scroll', function() {
+          var content = document.querySelector('header');
+          var scrollPosition = window.scrollY;
+          if (scrollPosition > 10) {
+              content.classList.add("header-scroll")
+          } else {
+              content.classList.remove("header-scroll")
+          }
+      });
+    </script>
+  
+  <script>
+     let fillterMeassage = document.querySelector("#filter");
+     fillterMeassage.innerHTML=""
+     function AreaselecFunction(){
+        var selectAreaValue = document.getElementById("byAreaName").value;
+       // console.log(selectAreaValue)
+        selectedArea(selectAreaValue)
+      }
+      function selectCategoryFunction(){
+        fillterMeassage.innerHTML=""
+          var selectCategoryValue = document.getElementById("byCategoryName").value;
+          //console.log(selectCategoryValue)
+          selectedCategory(selectCategoryValue)
+      }
+
+  </script>
+ <script>
+    let foodUrl= 'https://www.themealdb.com/api/json/v1/1/search.php?s=a';
+    const foodList = document.querySelector("#foodlist");
+    foodList.innerHTML=""
+    async function foodNameSearch(){
+       let fetchdata = await fetch(foodUrl);
+       let fetchResponse = await fetchdata.json();
+       //console.log(fetchResponse)
+       let allResponsData = fetchResponse.meals;
+       //console.log(allResponsData);
+       allResponsData.forEach( (elItem)=>{
+           let descripLimit = elItem.strInstructions;
+           let setParaLimit = descripLimit.slice(0,150)+'....';
+           foodList.innerHTML+=`
+           <div class="col-lg-3 col-md-4 col-12 col-sm-12">
+                <div class="card">
+                    <div class="card-food-img">
+                        <img src="${elItem.strMealThumb}" alt="${elItem.strMeal}" loading="lazy" title="${elItem.strMeal}"  class="img-fluid">
+                    </div>
+                    <div class="card-food-details">
+                        <div class="food-name-id">
+                            <h5 class="d-none">Id: ${elItem.idMeal}</h5>
+                            <h5>${elItem.strMeal}</h5>
+                        </div>
+                        <div>
+                            <h5>Area: ${elItem.strArea}</h5>
+                            <h5>Category: ${elItem.strCategory}</h5>
+                        </div>
+                    </div>
+                    <div class="description-card">
+                        <h5 class="d-none">${elItem.strTags}</h5>
+                        <p>
+                            ${setParaLimit}
+                        </p>
+                        <div class="producr-details-div">
+                            <a href="${elItem.strSource}"  target="_blank">Source</a>
+                            <button class="btn" onclick="viewDetails('${elItem.idMeal}')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div> `
+       })
+    }
+    window.addEventListener('load', foodNameSearch)
+
+
+    let submitButton = document.querySelector('.btnFilter');
+    let foodUrlName= `https://www.themealdb.com/api/json/v1/1/search.php?s=`;
+    async function foodNameSearchName(){
+      fillterMeassage.innerHTML="";
+       foodList.innerHTML="";
+       let userInput = document.querySelector('#username').value;
+       console.log(userInput)
+       let fetchdata = await fetch(foodUrlName+userInput);
+       let fetchResponse = await fetchdata.json();
+       let allResponsData = fetchResponse.meals;
+       fillterMeassage.innerHTML=`Total filter items ${allResponsData.length}`
+       allResponsData.forEach( (elItem)=>{
+           let descripLimit = elItem.strInstructions;
+           let setParaLimit = descripLimit.slice(0,150)+'....';
+           foodList.innerHTML+=`
+           <div class="col-lg-3 col-md-4 col-12 col-sm-12">
+                <div class="card">
+                    <div class="card-food-img">
+                        <img src="${elItem.strMealThumb}" alt="${elItem.strMeal}" loading="lazy" title="${elItem.strMeal}"  class="img-fluid">
+                    </div>
+                    <div class="card-food-details">
+                        <div class="food-name-id">
+                            <h5 class="d-none">Id: ${elItem.idMeal}</h5>
+                            <h5>${elItem.strMeal}</h5>
+                        </div>
+                        <div>
+                            <h5>Area: ${elItem.strArea}</h5>
+                            <h5>Category: ${elItem.strCategory}</h5>
+                        </div>
+                    </div>
+                    <div class="description-card">
+                        <h5 class="d-none">${elItem.strTags}</h5>
+                        <p>
+                            ${setParaLimit}
+                        </p>
+                        <div class="producr-details-div">
+                            <a href="${elItem.strSource}"  target="_blank">Source</a>
+                            <button class="btn" onclick="viewDetails('${elItem.idMeal}')" >Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div> `
+       })
+    }
+
+    submitButton.addEventListener('click', foodNameSearchName);
+
+    const select = document.querySelector("#byAreaName");
+    const areaSelectUrl = `https://www.themealdb.com/api/json/v1/1/list.php?a=list`;
+    async function selectedAreafunction(){
+        let fetchUrlSelect = await fetch(areaSelectUrl);
+        let fetchData = await fetchUrlSelect.json()
+        let optiondata =  fetchData.meals
+        optiondata.forEach( (eloption)=>{
+            //console.log(eloption.strArea)
+            const selectOpt = document.createElement('option');
+            selectOpt.value = eloption.strArea;
+            selectOpt.innerHTML = eloption.strArea
+            select.appendChild(selectOpt)
+        
+        })
+    }
+    selectedAreafunction();
+
+
+    const selectCategory = document.querySelector("#byCategoryName");
+    const categorySelectUrl = `https://www.themealdb.com/api/json/v1/1/list.php?c=list`;
+    async function selectedCategoryfunction(){
+        let fetchUrlSelect = await fetch(categorySelectUrl);
+        let fetchData = await fetchUrlSelect.json()
+        let optiondata =  fetchData.meals
+        optiondata.forEach( (eloption)=>{
+            //console.log(eloption.strCategory)
+            const selectOpt = document.createElement('option');
+            selectOpt.value = eloption.strCategory;
+            selectOpt.innerHTML = eloption.strCategory;
+            selectCategory.appendChild(selectOpt)
+        
+        })
+    }
+    selectedCategoryfunction();  
+ </script>
+ <script>
+    let selectAreaName = `https://www.themealdb.com/api/json/v1/1/filter.php?a=`;
+    let selectCategoryName = `https://www.themealdb.com/api/json/v1/1/filter.php?c=`
+    async function selectedArea(AreaName){
+       let fetchAreaName = await fetch(selectAreaName+AreaName);
+       let responseAreaName =  await fetchAreaName.json()
+       //console.log(responseAreaName)
+       let allAreaName = responseAreaName.meals;
+       foodList.innerHTML=""
+       console.log(allAreaName)
+       fillterMeassage.innerHTML=`Total filter items ${allAreaName.length} of ${AreaName}`
+       allAreaName.forEach( (elItem)=>{
+          let descripLimit = elItem.strMeal;
+          let setParaLimit = descripLimit.slice(0,150)+'....';
+          foodList.innerHTML+=`
+          <div class="col-lg-3 col-md-4 col-12 col-sm-12">
+              <div class="card">
+                  <div class="card-food-img">
+                      <img src="${elItem.strMealThumb}" alt="${elItem.strMeal}" loading="lazy" title="${elItem.strMeal}"  class="img-fluid">
+                  </div>
+                  <div class="card-food-details mt-3">
+                     <h5 class="">Id: ${elItem.idMeal}</h5>
+                      <div class="food-name-id">
+                          <h5>${elItem.strMeal}</h5>
+                      </div>
+                  </div>
+                  <div class="description-card">
+                      <h5 class="d-none">${elItem.strTags}</h5>
+                      <p>
+                          ${setParaLimit}
+                      </p>
+                  </div>
+                   <div class="producr-details-div learn-more-div">
+                        <button class="btn" onclick="viewDetails('${elItem.idMeal}')" >Learn More</button>
+                   </div>
+              </div>
+          </div> `
+       })
+    }
+
+    async function selectedCategory(CateroryName){
+       let fetchCateName = await fetch(selectCategoryName+CateroryName);
+       let responseCateName =  await fetchCateName.json()
+       //console.log(responseAreaName)
+       let allCateName = responseCateName.meals;
+       foodList.innerHTML=""
+       console.log(allCateName)
+       fillterMeassage.innerHTML=`Total filter items ${allCateName.length} of ${CateroryName}`
+       allCateName.forEach( (elItem)=>{
+          let descripLimit = elItem.strMeal;
+          let setParaLimit = descripLimit.slice(0,150)+'....';
+          foodList.innerHTML+=`
+          <div class="col-lg-3 col-md-4 col-12 col-sm-12">
+              <div class="card">
+                  <div class="card-food-img">
+                      <img src="${elItem.strMealThumb}" alt="${elItem.strMeal}" loading="lazy" title="${elItem.strMeal}"  class="img-fluid">
+                  </div>
+                  <div class="card-food-details mt-3">
+                     <h5 class="">Id: ${elItem.idMeal}</h5>
+                      <div class="food-name-id">
+                          <h5>${elItem.strMeal}</h5>
+                      </div>
+                  </div>
+                  <div class="description-card">
+                      <h5 class="d-none">${elItem.strTags}</h5>
+                      <p>
+                          ${setParaLimit}
+                      </p>
+                  </div>
+                   <div class="producr-details-div learn-more-div">
+                        <button class="btn" onclick="viewDetails('${elItem.idMeal}')">Learn More</button>
+                   </div>
+              </div>
+          </div> `
+       })
+    }
+ </script>
+<script>
+    function viewDetails(idMeal) {
+        window.location.href = `fooddetails.html?i=${idMeal}`;
+    }
+    
+</script>
+ 
+  </body>
+  </html>
+  
